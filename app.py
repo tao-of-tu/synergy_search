@@ -48,8 +48,8 @@ def perform_search(data, search_term):
 
 def display_network_graph(graph):
     if('checkbox_fun_graph' not in st.session_state):
-        st.text("it takes ~10 seconds to fully load")
-        st.text("feel free to zoom in, or reload the page to actually get shit done with the search")
+        st.text("it takes 10-20 seconds to fully load")
+        st.text("feel free to zoom in, or reload the page")
         # Load and preprocess data
         nodes = [Node(id=node, label=node) for node in graph.nodes()]
         edges = [Edge(source=edge[0], target=edge[1]) for edge in graph.edges()]
