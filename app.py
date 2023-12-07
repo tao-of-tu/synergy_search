@@ -84,6 +84,7 @@ def main():
             st.sidebar.text('')
 
             st.header('outputs flow')
+            st.write('if you are on mobile, you need to click the icon in top left of screen to open the search')
 
             list_ideas = [''] + st.session_state.data['title'].tolist()
             search_dropdown = st.sidebar.selectbox('select a result', options = list_ideas,
