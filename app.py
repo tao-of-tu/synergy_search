@@ -112,7 +112,7 @@ def main():
             key_connections = results_dropdown['analysis'].tolist()[0].split('Key Connections and Recommendations:')[-1].split('Deep Dive Analysis:')[0]
 
             customer_persona = results_dropdown['analysis'].tolist()[0].split('Deep Dive Analysis:')[-1].split("- Customer Persona Development:")[-1].split("- Practical Solution Proposal:")[0]
-            practical_solution = results_dropdown['analysis'].tolist()[0].split('- Practical Solution Proposal:')[-1]
+            practical_solution = results_dropdown['analysis'].tolist()[0].split('Practical Solution Proposal:')[-1]
             
             st.session_state['youtube_links'] = youtube_link_set
             st.session_state['key_connections'] = key_connections.lower()
